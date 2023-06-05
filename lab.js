@@ -113,3 +113,31 @@ for(let i = 0; i <= 2; i++){
 }
 console.log(person1)
 console.log(hamster1)
+
+// Chefs Make Dinners
+
+class Dinner {
+  constructor(appetizer, entree, dessert){
+    this.appetizer = appetizer;
+    this.entree = entree;
+    this.dessert = dessert
+  }
+
+}
+
+class Chef {
+  createDinner(appetizer, entree, dessert){
+    return new Dinner(appetizer, entree, dessert)
+  }
+
+}
+
+const chef = new Chef();
+
+const dinner1 = chef.createDinner('Salad', 'Steak', 'Chocolate lava cake')
+const dinner2 = chef.createDinner('Soup', 'Grilled Chicken', 'CheeseCake');
+const dinner3 = chef.createDinner('Bread Stick', 'Burger', 'Tiramisu')
+
+console.log('D1:', dinner1)
+console.log('D2:', dinner2)
+console.log('D3:', dinner1)
